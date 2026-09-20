@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Opsha — Automation & agentic workflows</title>
+  <meta name="description" content="Michael Opsha builds AI-assisted automation and agentic workflows that take fewer manual steps. CS and Applied Math student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top">Michael Opsha</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-statement">
+      <img class="portrait" src="headshot.jpg" width="104" height="104"
+           alt="Michael Opsha">
+      <p class="hero__statement" id="hero-statement">
+        I build automation and agentic tools that take manual steps out of everyday workflows.
+      </p>
+      <p class="hero__sub">
+        Computer science and applied math at Stony Brook University. Based in New York, NY.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn" href="resume.pdf">Download resume</a>
+        <a class="link" href="mailto:mopsha36@gmail.com">mopsha36@gmail.com</a>
+        <a class="link" href="https://www.linkedin.com/in/michael-opsha-048763298/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="link" href="https://github.com/mopsha" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <h2 class="section__h" id="work-h">Selected work</h2>
+
+      <details class="project" open>
+        <summary class="project__head">
+          <span class="project__name">Morning Briefing System</span>
+          <span class="project__year">2026</span>
+        </summary>
+        <div class="project__body">
+          <p>
+            A daily automation that pulls from calendar, tasks, habits, and project notes
+            and composes a single prioritized morning brief in Obsidian. Designed and
+            shipped solo — OAuth, scheduling, state reconciliation, test suite — using
+            Claude Code as a pair-programming tool. Bidirectional reconciliation reads the
+            prior day's checked items back into source files; atomic writes keep it safe
+            against cloud-sync conflicts.
+          </p>
+          <ul class="meta">
+            <li>TypeScript, Node.js, Claude API, Google Calendar API</li>
+            <li><span class="stat">~130-test</span> Vitest suite</li>
+            <li>TypeScript strict mode</li>
+          </ul>
+          <a class="link" href="https://github.com/mopsha/morning-briefing" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project__head">
+          <span class="project__name">Time Tracker</span>
+          <span class="project__year">2024</span>
+        </summary>
+        <div class="project__body">
+          <p>
+            A Monday.com plug-in adding automation to the Time Tracker column. Custom
+            webhooks and API integrations; user API keys stored in MongoDB.
+          </p>
+          <ul class="meta">
+            <li>Node.js, TypeScript, MongoDB</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project__head">
+          <span class="project__name">Skedulr</span>
+          <span class="project__year">2023</span>
+        </summary>
+        <div class="project__body">
+          <p>
+            A native iOS app for tracking coursework and assignments across user-entered
+            courses.
+          </p>
+          <ul class="meta">
+            <li>Swift, SwiftUI</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-h">
+      <h2 class="section__h" id="exp-h">Experience</h2>
+
+      <article class="role">
+        <div class="role__head">
+          <h3 class="role__title">Technology Intern, Product Engineering</h3>
+          <span class="role__at">Deloitte Technology &ndash; US</span>
+          <span class="role__when">June 2026 &ndash; August 2026</span>
+        </div>
+        <ul class="role__points">
+          <li>
+            Built a proof-of-concept agentic workflow in n8n with OpenAI models for a
+            Government &amp; Public Services team, querying USASpending.gov federal award
+            data through natural-language prompts to replace manual contract lookup.
+          </li>
+          <li>
+            Project-managed a 5-intern team in the firm's Innovation Challenge; proposed
+            retrieval-based conversation context management — retrieving relevant prior
+            turns rather than resending full history — and modeled projected token-cost
+            savings across model tiers, presenting to firm management.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role__head">
+          <h3 class="role__title">Technology Intern</h3>
+          <span class="role__at">Deloitte Technology &ndash; US</span>
+          <span class="role__when">June 2025 &ndash; August 2025</span>
+        </div>
+        <ul class="role__points">
+          <li>
+            Refactored a Python Gen-AI chatbot for the PxE Solutions team, cutting a
+            <span class="stat">~2,000-line</span> flow-control file to
+            <span class="stat">~500</span> by delegating conversation control to OpenAI's
+            LLM — reducing rigidity, bugs, and maintenance cost.
+          </li>
+          <li>
+            Rebuilt rejected Stage 1 deliverables into a working solution, adopted as the
+            framework for Stage 2 development.
+          </li>
+          <li>
+            Built a Python scheduler plug-in with the NY CXO Support team for workflow
+            management across <span class="stat">20+</span> technicians.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role__head">
+          <h3 class="role__title">IT Support Staff</h3>
+          <span class="role__at">Community Resources Staten Island, Inc.</span>
+          <span class="role__when">April 2023 &ndash; January 2025</span>
+        </div>
+        <ul class="role__points">
+          <li>
+            Provided technical support for <span class="stat">350+</span> staff across
+            <span class="stat">19</span> locations; configured hardware/software and
+            resolved maintenance tickets.
+          </li>
+          <li>
+            Deployed enterprise solutions including Cisco Meraki wireless access points and
+            PaperCut print management.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SKILLS / EDUCATION / INVOLVEMENT -->
+    <section class="section" id="skills" aria-labelledby="skills-h">
+      <h2 class="section__h" id="skills-h">Skills</h2>
+      <dl class="skills">
+        <div class="skills__row">
+          <dt>Languages</dt>
+          <dd>Python, Java, JavaScript/TypeScript, Node.js, Swift, C, HTML/CSS</dd>
+        </div>
+        <div class="skills__row">
+          <dt>Tools</dt>
+          <dd>MongoDB, Docker, n8n, pandas, Git, Claude Code, Xcode</dd>
+        </div>
+        <div class="skills__row">
+          <dt>Spoken</dt>
+          <dd>English (native), Russian (fluent)</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="edu-h">
+      <h2 class="section__h" id="edu-h">Education</h2>
+      <article class="role">
+        <div class="role__head">
+          <h3 class="role__title">B.S. Computer Science and Applied Math &amp; Statistics</h3>
+          <span class="role__at">Stony Brook University</span>
+          <span class="role__when">Expected May 2027</span>
+        </div>
+        <ul class="role__points">
+          <li>
+            GPA <span class="stat">3.50/4.00</span>. Concentration in AI and Data Science.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="inv-h">
+      <h2 class="section__h" id="inv-h">Involvement</h2>
+      <article class="role">
+        <div class="role__head">
+          <h3 class="role__title">President, Stony Brook Men's Soccer Club</h3>
+          <span class="role__when">May 2025 &ndash; Present</span>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="link" href="mailto:mopsha36@gmail.com">mopsha36@gmail.com</a>
+      <a class="link" href="https://www.linkedin.com/in/michael-opsha-048763298/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link" href="https://github.com/mopsha" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
