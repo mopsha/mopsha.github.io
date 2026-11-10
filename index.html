@@ -49,6 +49,52 @@
 
       <details class="project" open>
         <summary class="project__head">
+          <span class="project__name">BetLab</span>
+          <span class="project__year">2026</span>
+        </summary>
+        <div class="project__body">
+          <p>
+            A sports-betting research system. It prices lines at retail sportsbooks against
+            the sharp market's no-vig prices, logs every pick to an append-only ledger before
+            the game, and grades each one by closing line value. A worker on Railway runs the
+            schedule unattended: overnight grading, morning lines, and a pre-game pass every
+            15 minutes that pulls the news, reprices, publishes and sends alerts.
+          </p>
+          <p>
+            Backtests showed closing lines beat my own ratings models, so a model gets zero
+            weight until a backtest earns it some. A Next.js web app and a SwiftUI iPhone app
+            read from one Supabase database. Built over about 2,000 commits with Claude Code
+            as the engineering partner; I set the direction and made the product decisions.
+          </p>
+          <div class="shots" role="region" aria-label="BetLab screenshots" tabindex="0">
+            <figure>
+              <img src="img/betlab-games.jpg" width="480" height="922" loading="lazy"
+                   alt="BetLab's Games screen: tonight's college basketball, NBA and NHL games with start times and counts of priced markets.">
+              <figcaption>Tonight's slate</figcaption>
+            </figure>
+            <figure>
+              <img src="img/betlab-game.jpg" width="480" height="922" loading="lazy"
+                   alt="A game page for Bills at Vikings: the market spread and total, the model's rating, a quarterback change, and written notes on what changed.">
+              <figcaption>Game notes</figcaption>
+            </figure>
+            <figure>
+              <img src="img/betlab-pricing.jpg" width="480" height="922" loading="lazy"
+                   alt="A player prop priced at 55% with a fair price of minus 122 and a 1.3% edge, above a four-leg parlay compared across FanDuel, DraftKings and Novig.">
+              <figcaption>Prop and parlay pricing</figcaption>
+            </figure>
+          </div>
+          <ul class="meta">
+            <li>Python, pandas, scikit-learn, Next.js, TypeScript, SwiftUI, Supabase</li>
+            <li><span class="stat">~90k</span> lines; <span class="stat">1,020</span> Python, <span class="stat">229</span> web and <span class="stat">201</span> iPhone tests</li>
+            <li><span class="stat">47</span> Postgres migrations with row-level security</li>
+            <li>NFL, college football, NBA, college basketball, NHL, soccer and UFC</li>
+          </ul>
+          <a class="link" href="https://github.com/mopsha/betlab-portfolio" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project__head">
           <span class="project__name">Morning Briefing System</span>
           <span class="project__year">2026</span>
         </summary>

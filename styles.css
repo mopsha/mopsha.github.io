@@ -210,6 +210,40 @@ summary:focus-visible {
 .project__body { margin-top: .9rem; max-width: var(--measure); }
 .project__body p { margin: 0 0 1rem; }
 
+/* Screenshot strip: three phone screens side by side, swipes on narrow screens */
+.shots {
+  display: flex;
+  gap: .9rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 0 0 1.25rem;
+  padding-bottom: .4rem;
+}
+.shots:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.shots figure {
+  flex: 0 0 13rem;
+  margin: 0;
+  scroll-snap-align: start;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--hair);
+  background: #0B0C10;
+}
+.shots figcaption {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--muted);
+  margin-top: .45rem;
+}
+
 .meta {
   list-style: none;
   padding: 0;
